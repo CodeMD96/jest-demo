@@ -41,3 +41,23 @@ it("Should return a string", () => {
 it("Should return Uranus when given 7", () => {
     expect(app.planet(7)).toEqual("Uranus");
 });
+
+it("should return 2 when give [true, true, false, false].", () => {
+    expect(app.students([true, true, false, false])).toEqual(2);
+});
+
+it("Should return 916 when given 34", () => {
+    expect(app.squareDigi(34)).toEqual(916);
+});
+
+it("Should return 18 when given 1789", () => {
+    expect(app.century(1789)).toEqual(18);
+});
+
+it("Should return 1 when given [0, 0, 0, 1]", () => {
+    expect(app.toBinary([0, 0, 0, 1])).toEqual(1);
+});
+
+it("Should return 4 when given [0, 1, 0, 0]", () => {
+    expect(app.toBinary([0, 1, 0, 0])).toEqual(4);
+});
